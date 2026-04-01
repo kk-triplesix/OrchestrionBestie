@@ -10,7 +10,13 @@ public enum SourceType
 {
     Trial,
     Raid,
+    AllianceRaid,
     Dungeon,
+    DeepDungeon,
+    VariantDungeon,
+    TreasureMap,
+    Eureka,
+    FieldOperation,
     FATE,
     Achievement,
     Quest,
@@ -20,6 +26,7 @@ public enum SourceType
     Event,
     PvP,
     GoldSaucer,
+    Hunt,
     Other,
 }
 

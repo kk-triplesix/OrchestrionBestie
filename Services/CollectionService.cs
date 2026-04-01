@@ -51,6 +51,7 @@ public sealed class CollectionService
                 Name = name,
                 Type = CollectibleType.Mount,
                 IconId = (ushort)row.Icon,
+                Sources = DropSourceDatabase.GetMountSources(name),
             };
 
             Mounts.Add(data);
@@ -80,6 +81,7 @@ public sealed class CollectionService
                 Name = name,
                 Type = CollectibleType.Minion,
                 IconId = (ushort)row.Icon,
+                Sources = DropSourceDatabase.GetMinionSources(name),
             };
 
             Minions.Add(data);
