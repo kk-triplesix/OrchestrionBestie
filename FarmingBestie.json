@@ -1,0 +1,28 @@
+{
+  "Author": "kk-triplesix",
+  "Name": "FarmingBestie",
+  "InternalName": "FarmingBestie",
+  "Description": "Mount and minion farming tracker with drop sources.\n\n- Browse all mounts and minions with collection status\n- See exact drop sources: trials, raids, dungeons, FATEs, achievements, quests\n- Track farming runs with kill counter per duty\n- Wishlist system for targeted farming\n- Drop rate estimates from community data\n- Filter by source type, expansion, owned/missing\n- Statistics: collection progress, runs per drop\n- Customizable overlay for active farming sessions\n- Multi-language (EN/DE/FR/JP)\n\nCommands:\n/farm - Toggle main window\n/farm search <name> - Search mount/minion\n/farm stats - Show collection statistics",
+  "ApplicableVersion": "any",
+  "DalamudApiLevel": 14,
+  "TestingDalamudApiLevel": 14,
+  "Tags": [
+    "mount",
+    "minion",
+    "farming",
+    "tracker",
+    "collection",
+    "drop",
+    "loot"
+  ],
+  "CategoryTags": [
+    "other"
+  ],
+  "LoadRequiredState": 0,
+  "LoadSync": false,
+  "CanUnloadAsync": false,
+  "LoadPriority": 0,
+  "IsTestingExclusive": false,
+  "Punchline": "Track your mount and minion collection — know exactly where to farm what you're missing.",
+  "AcceptsFeedback": true
+}
