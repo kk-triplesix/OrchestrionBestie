@@ -1,7 +1,9 @@
-<Project Sdk="Dalamud.NET.Sdk/14.0.1">
+<Project Sdk="Dalamud.NET.Sdk/14.0.2">
 	<PropertyGroup>
-		<Description>FarmingBestie - Mount and minion farming tracker.</Description>
+		<Version>0.1.0.0</Version>
+		<Description>OrchestrionBestie</Description>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
 		<Platforms>x64</Platforms>
 		<TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
 		<SupportedOSPlatformVersion>8.0</SupportedOSPlatformVersion>
@@ -12,20 +14,18 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
-		<OutputPath>$(SolutionDir)\bin\$(Configuration)\FarmingBestie</OutputPath>
+		<OutputPath>$(SolutionDir)\bin\$(Configuration)\OrchestrionBestie</OutputPath>
 		<NoWarn>1591</NoWarn>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
-		<OutputPath>$(SolutionDir)\bin\$(Configuration)\FarmingBestie</OutputPath>
+		<OutputPath>$(SolutionDir)\bin\$(Configuration)\OrchestrionBestie</OutputPath>
 		<NoWarn>1591</NoWarn>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="ECommons" Version="3.1.0.27" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<Using Include="Dalamud.Interface" />
+		<Using Include="Dalamud.Interface.Utility" />
+		<Using Include="Dalamud.Interface.Utility.Raii" />
 		<Using Include="Dalamud.Bindings.ImGui" />
 	</ItemGroup>
 
@@ -33,13 +33,4 @@
 		<PackageReference Update="DalamudPackager" Version="14.0.2" />
 		<PackageReference Update="DotNet.ReproducibleBuilds" Version="2.0.2" />
 	</ItemGroup>
-
-	<Target Name="CopyToDevPlugins" AfterTargets="Build" Condition="'$(CI)' != 'true'">
-		<PropertyGroup>
-			<DevPluginDir>$(AppData)\XIVLauncher\devPlugins\FarmingBestie\</DevPluginDir>
-		</PropertyGroup>
-		<MakeDir Directories="$(DevPluginDir)" />
-		<Copy SourceFiles="$(OutputPath)FarmingBestie.dll;$(OutputPath)ECommons.dll" DestinationFolder="$(DevPluginDir)" SkipUnchangedFiles="true" />
-		<Message Text="Copied FarmingBestie to $(DevPluginDir)" Importance="high" />
-	</Target>
 </Project>
