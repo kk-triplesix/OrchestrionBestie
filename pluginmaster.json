@@ -1,0 +1,29 @@
+[
+  {
+    "Author": "kk-triplesix",
+    "Name": "OrchestrionBestie",
+    "InternalName": "OrchestrionBestie",
+    "Description": "OrchestrionBestie Dalamud Plugin.\n\nCommands:\n/ob - Toggle main window",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 14,
+    "TestingDalamudApiLevel": 14,
+    "Tags": [],
+    "CategoryTags": [
+      "other"
+    ],
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IsTestingExclusive": false,
+    "Punchline": "OrchestrionBestie",
+    "AcceptsFeedback": true,
+    "AssemblyVersion": "0.1.0.0",
+    "TestingAssemblyVersion": "0.1.0.0",
+    "DownloadLinkInstall": "https://github.com/kk-triplesix/OrchestrionBestie/releases/download/0.1.0.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/kk-triplesix/OrchestrionBestie/releases/download/0.1.0.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/kk-triplesix/OrchestrionBestie/releases/download/0.1.0.0/latest.zip",
+    "DownloadCount": 0,
+    "LastUpdated": "2026-04-09T20:20:32Z"
+  }
+]
